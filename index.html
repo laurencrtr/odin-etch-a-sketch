@@ -9,18 +9,22 @@
     <script src="javascript.js" defer></script>
 </head>
 <body>
-    <h1 id="nameOfTheGame">Etch-a-Sketch Grid</h1>
 
-    <div class="grid">
+    <div id="everythingDiv">
+        <h1 id="nameOfTheGame">Etch-a-Sketch</h1>
 
+        <div class="grid"></div>
+
+        <div id="buttonContainer">
+            <button id="changeColor">Change Color: 
+                    <input type="color" id="colorPicker">
+            </button>
+            <button id="eraser">Eraser</button>
+            <button id="paint">Paint Brush</button>
+            <button id="changeGridSize">Change Grid Size</button>
+            <button id="clear">Reset Grid</button>
+        </div>
     </div>
 
-    <div id="buttonContainer">
-        <button id="changeGridSize">Change Grid Size</button>
-        <button id="clear">Clear Grid</button>
-        <button id="changeColor">Change Color</button>
-        <button id="eraser">Eraser</button>
-        <!-- <button id="clearButton">Clear</button> -->
-    </div>
 </body>
 </html>
