@@ -31,7 +31,23 @@ function changeBoxColor(currentBox, currentcolor) {
 
 function getNumber() {
     let userNumber = prompt("Please enter a number 0-100. Your input must be a number.")
+    valid = checkGridSizeInput(userNumber)
+    while (valid === 'false') {
+        userNumber = prompt("Please enter a number 0-100. Your input must be a number.")
+        valid = checkGridSizeInput(userNumber)
+    }
     return userNumber
+}
+
+function checkGridSizeInput(userInput) {
+    if (isNaN(userInput)) {
+        return 'false'
+    } else if (userInput < 0) {
+        return 'false'
+    } else if (userInput > 100) {
+        return 'false'
+    }  
+    return 'true'
 }
 
 function changeToEraser() {
